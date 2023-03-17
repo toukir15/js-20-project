@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- daisy ui link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .player__img {
+        box-shadow: 0 5px 30px 5px rgb(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body class="h-screen bg-[#C1C7CD] flex items-center justify-center">
+    <div class="card w-96 bg-base-100 shadow-xl bg-white relative">
+      <div class="relative">
+        <figure class="px-10 pt-10">
+          <img
+            src="images/img-1.jpg"
+            alt="Shoes"
+            class="player__img rounded-xl absolute w-4/5 -top-12 h-[320px]"
+          />
+        </figure>
+        <div
+          class="card-body items-center text-center h-[405px] flex justify-end"
+        >
+          <div class="mt-2">
+            <h2 class="card-title font-bold text-2xl">Baarishien-Anuv-Jain</h2>
+            <p class="font-semibold">Anuv Jain</p>
+          </div>
+          <div>
+            <audio src="audio/Baarishien-Anuv-Jain.mp3" controls></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js file  -->
+    <script src="music-player.js"></script>
+    <!-- daisyui js -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
