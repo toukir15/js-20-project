@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Player</title>
+    <!-- font awesome  -->
+    <script
+      src="https://kit.fontawesome.com/39749765a9.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- daisy ui link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css"
@@ -28,14 +33,43 @@
           />
         </figure>
         <div
-          class="card-body items-center text-center h-[405px] flex justify-end"
+          class="card-body items-center text-center h-[500px] flex justify-end"
         >
           <div class="mt-2">
             <h2 class="card-title font-bold text-2xl">Baarishien-Anuv-Jain</h2>
             <p class="font-semibold">Anuv Jain</p>
           </div>
           <div>
-            <audio src="audio/Baarishien-Anuv-Jain.mp3" controls></audio>
+            <audio src="audio/Baarishien-Anuv-Jain.mp3"></audio>
+          </div>
+
+          <!-- duration  -->
+          <div class="w-full relative">
+            <div class="flex justify-between w-full absolute">
+              <p class="flex justify-start">0.00</p>
+              <p class="flex justify-end">2.17</p>
+            </div>
+          </div>
+
+          <!-- duration length  -->
+          <div class="mt-3">
+            <progress class="progress w-80 h-2" value="70" max="100"></progress>
+          </div>
+
+          <!-- button  -->
+          <div class="flex w-full justify-center">
+            <i
+              class="fa-solid fa-backward text-3xl text-gray-500 hover:text-gray-600"
+              id="prev"
+            ></i>
+            <i
+              class="fa-solid fa-play text-4xl mx-8 text-gray-500 hover:text-gray-600"
+              id="play"
+            ></i>
+            <i
+              class="fa-solid fa-forward text-3xl text-gray-500 hover:text-gray-600"
+              id="next"
+            ></i>
           </div>
         </div>
       </div>
