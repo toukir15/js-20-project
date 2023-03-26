@@ -17,11 +17,7 @@ const songs = [
         displayName: 'Baarishien',
         artist: 'Anuv Jain'
     },
-    {
-        name: 'Jo-Tu-Na-Mila-Asim-Azhar',
-        displayName: 'Jo-Tu-Na-Mila',
-        artist: 'Asim-Azhar'
-    },
+
     {
         name: 'Khair-Mangdi-Neha-Bhasin-Harrdy-Sandhu',
         displayName: 'Khair-Mangdi',
@@ -31,6 +27,26 @@ const songs = [
         name: 'Yeh-Aaina-Shreya-Ghoshal',
         displayName: 'Yeh-Aaina',
         artist: 'Shreya-Ghoshal'
+    },
+    {
+        name: 'Yeh-Aaina-Shreya-Ghoshal',
+        displayName: 'Yeh-Aaina',
+        artist: 'Shreya-Ghoshal'
+    },
+    {
+        name: 'Kho Gaye Hum Kahan -Full Video _Baar Baar Dekho _ Sidharth Malhotra, Katrina K_ Jasleen R, Prateek K_vt4jX0iRgCg',
+        displayName: 'Kho Gaye Hum Kahan',
+        artist: 'Prateek'
+    },
+    {
+        name: 'Waqt ki Baatein (Official Music Video) _ Dream Note_b-K4oDRk04M',
+        displayName: 'Waqt ki Baatein',
+        artist: '...'
+    },
+    {
+        name: 'Kasoor (Acoustic) - Prateek Kuhad _ Official Lyric iOIF74Hk80A',
+        displayName: 'Kasoor',
+        artist: 'Prateek Kuhad'
     },
 ]
 
@@ -64,6 +80,7 @@ function loadSong(song) {
     artist.textContent = song.artist;
     music.src = `audio/${song.name}.mp3`
     image.src = `images/${song.name}.jpg`
+    console.log(song);
 }
 
 // current song 
